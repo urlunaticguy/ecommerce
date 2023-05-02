@@ -4,7 +4,7 @@ export default function LandingNavbar() {
     return (
         <div className=" w-full flex flex-row justify-between">
             <div className=" flex flex-row items-center gap-2">
-                <Image src={"/assets/images/Apple_Logo_PNG.png"} width={50} height={100} />
+                <Image src={"/assets/images/Apple_Logo_PNG.png"} alt="Apple logo" width={50} height={100} />
                 <h2 className=" text-[1.6rem] font-light">ShopCart</h2>
             </div>
 
