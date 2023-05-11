@@ -13,7 +13,7 @@ export default function ProductsContainer() {
             <Heading />
             <div className=" w-full py-2 px-4 mt-2 flex flex-row flex-wrap gap-8">
                 {productsArray.map((data, index) => (
-                    <ProductCard product={data} />
+                    <ProductCard key={index} product={data} />
                 ))}
             </div>
         </>
