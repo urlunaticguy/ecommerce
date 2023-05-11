@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Rating } from 'react-simple-star-rating'
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function ProductCard(props) {
     const [rating, setRating] = useState(0) // initial rating value
@@ -23,7 +24,7 @@ export default function ProductCard(props) {
     // Some logic
   }
     return (
-        <div className=" w-[16rem] h-[20rem] rounded-xl p-2 flex flex-col border-2 border-slate-300">
+        <Link href={"/frontend/screens/ProductScreen/ProductScreen"} className=" w-[16rem] h-[20rem] rounded-xl p-2 flex flex-col hover:bg-slate-100 cursor-pointer">
             <Image width={256} height={256} src={image} />
             <div className=" flex flex-row justify-between items-center font-semibold">
                 <h1>{name}</h1>
@@ -45,6 +46,6 @@ export default function ProductCard(props) {
                     className=' inline' // Will remove the inline style if applied
                 />
             </div>
-        </div>
+        </Link>
     )
 }
