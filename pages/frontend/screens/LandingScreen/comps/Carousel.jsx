@@ -31,7 +31,7 @@ export default function LandingCarousel() {
     }, [])
 
     return (
-        <div className=" relative w-full h-[24rem] mt-4 flex flex-row items-center">
+        <div className=" relative w-full h-[24rem] 2xl:h-[32rem] mt-4 flex flex-row items-center">
             <div>
                 {/* left chevron */}
                 <svg onClick={() => {changeImageOnLeftArrowClick()}} className=" bg-slate-200 fill-black rounded-full px-4 py-3 w-12 left-4 -mt-4 absolute hover:bg-slate-300 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
